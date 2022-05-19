@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+  background: #23253d;
+  /* background: #23253d url("assets/images/spaceman.svg"); */
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  font-family: "Fredoka", sans-serif;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 420px) {
+  .waves{
+    display: none;
+  }
+  #button-submit{
+    
+    right:-55px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+.body-wrap {
+  width: 100%;
+}
+
+header {
+  
+  max-width: 300px;
+  margin: auto;
+}
+header h1 {
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+  color: rgb(10, 171, 235);
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: 700;
+}
+header h1 span {
+  color: rgb(204, 204, 204);
+}
+header small {
+  color: #7e8099;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+}
+
+main form {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-top: 60px;
+}
+main form fieldset {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  position: relative;
+  border-radius: 10px;
+}
+main form fieldset input[type="text"] {
+  color: #7e8099;
+  width: 60%;
+  border: none;
+  padding: 20px 160px 20px 20px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+main form fieldset input[type="submit"] {
+  background: #12554c url("https://icons8.com/icon/hGHnxaSWwWYb/link");
+  font-family: 'Permanent Marker', cursive;
+  background-position: 85% 50%;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 14px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  padding: 20px 60px 20px 20px;
+  outline: none;
+  font-weight: 700;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+  cursor: pointer;
+}
+main form fieldset input[type="submit"]:hover {
+  background: #a51830
+    url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/collection/components/icon/svg/cut.svg");
+  background-position: 85% 50%;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+
+
+
+
+main #result {
+  display: block;
+  background: #1e1d32;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  text-shadow: 1px 1px 1px #000;
+  opacity: 0;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+main #copy {
+  background: url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/collection/components/icon/svg/copy-sharp.svg);
+  background-position: 85% 50%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 35px;
+  top: 5px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.3;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+main .display-result #result,
+main .display-result #copy {
+  opacity: 1;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  /* top: 15px; */
+}
+
+main #copy:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+main #copy:hover:after {
+  opacity: 1;
+  display: block;
+}
+main #copy:after {
+  opacity: 0;
+  content: "copy";
+  color: #fff;
+  padding: 5px 8px;
+  background: #000;
+  position: absolute;
+  bottom: -30px;
+  font-size: 10px;
+  border-radius: 5px;
+  left: 0px;
+  text-transform: uppercase;
+  -webkit-transition: 0.6s all;
+  -o-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.footer {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0099ff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.waves{
+  position: relative;
+  top: 100px;
+}
+
+
+
+.socials{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
